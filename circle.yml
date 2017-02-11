@@ -1,0 +1,6 @@
+deployment:
+  dev3:
+    branch: master
+    commands:
+      - ssh hoshi@54.238.193.71 id
+      - ssh hoshi@54.238.193.71 pwd; cd; pwd
