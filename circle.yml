@@ -1,6 +1,11 @@
+machine:
+    timezone: Asia/Tokyo
+    
+    hosts:   #/etc/hostsを書き換える
+        moon: 54.238.193.71
+
 deployment:
   dev3:
     branch: master
     commands:
-      - ssh hoshi@54.238.193.71 id
-      - ssh hoshi@54.238.193.71 echo `id`@`hostname`:`pwd`
+      - ssh hoshi@moon /home/hoshi/deploy.sh
